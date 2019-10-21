@@ -39,4 +39,7 @@ function selectcountrycode(imgurl){
   $("#btnimageid").attr("src",imgurl);
 };
 </script>
+
+<!-- if u want to twice or multiple time this function so you need change first button id and than chaneg function(selectcountrycode) and than u have to change btnimageid  -->
+
 <!--- flags dropdown -->
