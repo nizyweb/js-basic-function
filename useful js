@@ -19,3 +19,24 @@ $(".dropdown-menu li a").click(function(){
 });
 </script>
 <!--- dropdown button with same name print in selector -->
+
+<!--- flags dropdown -->
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <img src="images/flags/eng.png" height="30" width="30" id="btnimageid">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="javascript:;" onclick="selectcountrycode('images/flags/usa.png')"><img src="images/flags/usa.png" width="30" height="30"></a></li>
+    <li><a href="javascript:;" onclick="selectcountrycode('images/flags/de.png')"><img src="images/flags/de.png" width="30" height="30"></a></li>
+    <li><a href="javascript:;" onclick="selectcountrycode('images/flags/can.png')"><img src="images/flags/can.png" width="30" height="30"></a></li>
+  </ul>
+</div>
+
+<script>
+function selectcountrycode(imgurl){
+    $("#btnimageid").attr("src","");
+  $("#btnimageid").attr("src",imgurl);
+};
+</script>
+<!--- flags dropdown -->
