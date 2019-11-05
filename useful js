@@ -1,3 +1,51 @@
+<!--- basic forn validation -->
+<form action="#" method="post" onsubmit="return validation();">
+		<input type="text" id="name" name="name">
+		<input type="text" id="email" name="email">
+		<input type="password" id="password" name="password">
+		<input type="submit" name="submit" value="Got It">
+</form>
+<div id="empty_result" style="color: red;"></div>
+
+<script>
+		function validation() {
+			var name = document.getElementById('name').value;
+			var email = document.getElementById('email').value;
+			var password = document.getElementById('password').value;
+
+			//if(name=='' || email=='' || password=='')
+			if(name=='')
+			{
+				document.getElementById('empty_result').innerHTML = "All fileds are required";
+				return false;
+			}
+			else if(email=='')
+			{
+				document.getElementById('empty_result').innerHTML = "Please input your vaild email id";
+				return false;
+			}
+			//else if(password.length<6)
+			else if(password=='')
+			{
+				document.getElementById('empty_result').innerHTML = "Please type a correct password";
+				return false;
+			}
+
+			else{
+				return true;
+			}
+		}
+	</script>
+<!--- basic forn validation -->
+
+
+
+
+
+
+
+
+
 <!--- dropdown button with same name print in selector -->
 <div class="dropdown">
   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
