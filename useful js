@@ -91,3 +91,21 @@ function selectcountrycode(imgurl){
 <!-- if u want to twice or multiple time this function so you need change first button id and than chaneg function(selectcountrycode) and than u have to change btnimageid  -->
 
 <!--- flags dropdown -->
+
+
+<!-- for active and inactive -->
+<script>
+$(document).ready(function(){
+  $('ul li a').click(function(){
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+});
+});
+</script>
+<!-- for active and inactive -->
+
+
+
+
+
+
