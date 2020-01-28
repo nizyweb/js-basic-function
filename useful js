@@ -103,7 +103,15 @@ $(document).ready(function(){
 });
 </script>
 <!-- for active and inactive -->
-
+<!-- for radio button selection -->
+<script>
+ $(document).ready(function() {
+        $('.find-selection').click(function() {
+            console.log($("input:radio.myselction:checked"));
+        });
+    });
+</script>
+<!-- for radio button selection -->
 
 
 
