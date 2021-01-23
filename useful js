@@ -129,4 +129,16 @@ function popdown()
 </script>
 
 
-
+/*show hide div with name change*/
+<button class="show_hide ask-quest-toggle" data-content="toggle-text">ask a question <i class="fa fa-angle-down"></i></button>
+<div class="content">Testing</div> 
+<script>
+$(document).ready(function () {
+    $(".content").hide();
+    $(".show_hide").on("click", function () {
+        var txt = $(".content").is(':visible') ? 'ask a question <i class="fa fa-angle-down"></i>' : '<i class="fa fa-times"></i>';
+        $(".show_hide").html(txt);
+        $(this).next('.content').slideToggle(200);
+    });
+});
+</script>
